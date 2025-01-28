@@ -2,16 +2,18 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 require('dotenv').config();
-
 const cors = require('cors'); // Import CORS
 
 const app = express(); // Initialize the app
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000; // Port from Heroku or local
 
 // Middleware
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+// Serve static files from the 'public' directory
+app.use(express.static('public'));
 
 // Nodemailer SMTP setup for Gmail
 const transporter = nodemailer.createTransport({
