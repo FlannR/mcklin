@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mcklin's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="header">
+
+        <a href="#home" class="logo">
+        Mcklin <span>R. Zirongodza</span>
+        </a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+        
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="gradient-btn" onclick="scrollToContact()">Contact Me</button>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Mcklin</span> Step into <span>My Creative Space!</span></h1>
+            <h3>Crafting Code, Connecting Ideas, and Innovating Futures</h3>
+            
+            <p>I'm a forward-thinking developer and consultant passionate about blending technology with creativity.  I thrive on turning challenges into opportunities. Explore my world of transformative technology and discover how we can create impactful digital experiences together.</p>
+            <div class="social-icons">
+                <a  href="https://github.com/FlannR" target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-github"></i>
+                </a>
+
+                <a  href="https://www.linkedin.com/in/mcklin-zirongodza-8b71b21a7" target="_blank" rel="noopener noreferrer" >
+                    <i class="bx bxl-linkedin-square"></i>
+                </a>
+
+                <a  href="https://www.instagram.com/mcklin.r?igsh=bWZkNXh0dm54a251 " target="_blank" rel="noopener noreferrer">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+
+                <a onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=mcklinrzirongodza@gmail.com&su=Hello&body=I%20would%20like%20to%20connect', '_blank', 'noopener,noreferrer');">
+                    <i class="bx bxl-gmail"></i>
+                </a>
+            </div>
+
+            <div class="btn-group">
+                <a href="./images/Mcklin_R_Zirongodza_CV.pdf" class="btn" download="Mcklin_R_Zirondza_CV.pdf">Download CV</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+            
+        </div>
+        
+        <div class="home-img">
+            <img src="./images/img1.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./images/img1.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <p>
+                I am a dynamic full-stack developer and IT consultant with a passion for creating impactful digital solutions. From sleek front-end designs to robust back-end systems, I bring ideas to life with precision and creativity.              
+                  <span id="more-text" style="display: none;">
+                    With expertise in HTML, CSS, JavaScript, and Node.js, I’ve built responsive and engaging websites, mobile apps, and IoT solutions. My ability to bridge user needs with technical innovation has led to successful projects in blockchain-based systems and identity management. Beyond development, I thrive in solving complex problems, ensuring seamless integrations, and delivering exceptional user experiences.                </span>
+            </p>
+            <a id="read-more-btn" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading" ><span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bxl-figma"></i>
+                    <h4>Ui / Ux Design</h4>
+                    <p>I bring ideas to life with intuitive and aesthetically pleasing designs. My UI/UX expertise ensures seamless user interactions, bridging the gap between creativity and functionality to deliver designs that captivate and engage.</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bx-code"></i>
+                    <h4>Frontend Development</h4>
+                    <p>Specializing in responsive and dynamic user interfaces, I develop frontend solutions that are visually appealing and highly functional. Leveraging technologies like HTML, CSS, JavaScript, and React, I create applications that work flawlessly across all devices.</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bx-code-curly"></i>
+                    <h4>Backend Development</h4>
+                    <p>From robust database management to scalable server-side logic, I engineer backend systems that drive seamless application performance. My expertise ensures security, efficiency, and reliability for all your digital needs.</p>
+                </div>
+            </div>
+
+                <div class="service-box">
+                    <div class="service-info">
+                        <div class="icons">
+                            <i class="bx bxs-cog"></i>
+                            <i class="bx bxs-briefcase"></i>
+                        </div>
+                        <h4>Your IT Partner</h4>
+                        <p>As your dedicated IT partner, I deliver customized solutions that align with your goals. From consultancy to implementation, I empower businesses to embrace technology, ensuring smooth operations and future-ready systems.</p>
+                    </div>    
+                </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading"><span>Projects</span></h2>
+
+        <div class="projects-box">
+
+            <div class="project-card">
+                <img src="./images/cast_weather.png" alt="">
+
+                <h3>Cast</h3>
+                <p>Cast is a sleek and modern weather app designed to provide users with accurate and up-to-date weather information. Built using HTML, TailwindCSS, JavaScript, FontAwesome, and APIs, the app delivers a user-friendly experience while fetching real-time weather data from reliable source.</p>
+                <div class="btn" onclick="window.open('https://flannr.github.io/cast-weather/', '_blank')">Review Project</div>
+            </div>
+
+            <div class="project-card">
+                <img src="./images/foodora.png" alt="Foodora Project">
+            
+                <h3>Foodora</h3>
+                <p>
+                    Foodora is a modern food delivery platform designed to showcase restaurant menus and enable seamless online food ordering. Built with HTML, CSS, and JavaScript, this project emphasizes responsive design and user experience.
+                </p>
+                <div class="btn" onclick="window.open('https://flannr.github.io/Foodora/', '_blank')">
+                    Review Project
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="./images/currenzy.png" alt="Currenzy Project Image">
+            
+                <h3>Currenzy</h3>
+                <p>Currenzy is a dynamic platform designed to simplify currency conversion for users. It offers real-time exchange rates, historical data, and a user-friendly interface for seamless currency conversion. Whether you're traveling or trading, have up-to-date information at your fingertips.</p>
+                <div class="btn" onclick="window.open('https://currenzy-be6303977126.herokuapp.com', '_blank')">Review Project</div>
+            </div>
+            
+
+            <div class="project-card">
+                <img src="./images/digit_box.jpg" alt="">
+
+                <h3>DIGIT BOX</h3>
+                <p>  Digit Box is a mobile game where players crush numbers, gain points on other colors, and avoid red to stay above zero. 
+                    Built with Buildbox alongside a colleague, I focused on game design and functionality to create a fun, strategic experience.
+                </p>
+                <div class="btn" onclick="openModal()">Review Project</div>
+                
+            </div>
+
+            <div class="project-card">
+                <img src="./images/movie_review.png" alt="Views Movie Review App">
+            
+                <h3>Viewflix</h3>
+            
+                <p>Viewflix is an intuitive movie review app that allows users to discover, rate, and review movies. With a sleek design and easy navigation, users can explore movie details, check ratings, and share their thoughts on their favorite films. Views enhances your movie experience by providing insightful user-generated reviews and ratings.</p>
+                <div class="btn" onclick="opencsModal()">Review Project</div>
+            </div>
+            
+
+            <div class="project-card">
+                <img src="./images/attch_me.png" alt="AttchMe App">
+            
+                <h3>AttchMe</h3>
+                <p>An innovative platform designed to help students find attachment opportunities while allowing companies to discover and recruit talented interns. Students can browse through a variety of listings posted by companies seeking interns, making it easier to apply. AttchMe bridges the gap between students and potential employers, creating valuable opportunities for both.</p>
+                <div class="btn" onclick="opencsModal()">Review Project</div>
+            </div>
+
+            <div id="comingSoonModal" class="csmodal">
+                <div class="csmodal-content">
+                    <span class="csclose" onclick="closecsModal()">&times;</span>
+                    <h2>Coming Soon!</h2>
+                    <p>This project is still under development. Stay tuned for updates.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+            
+            
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Get in <span>Touch</span></h2>
+    
+        <form id="contact-form">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" name="name" required>
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+    
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number" name="phone">
+                    <input type="text" placeholder="Subject" name="subject" required>
+                </div>
+            </div>
+    
+            <div class="input-group-2">
+                <textarea placeholder="Your Message" name="message" required cols="30" rows="10"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+      
+
+    <section class="faq hidden" id="faq">
+        <h2 class="heading"><span>Frequently Asked Questions</span></h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    What services do you offer? <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>I specialize in web development, IT consultancy, IoT solutions, and mobile app design.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    How can I contact you? <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>You can use the contact form on this page or email me directly at mcklinrzirongodza@gmail.com.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do you work on freelance projects? <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, I am available for freelance projects. Feel free to reach out to discuss your requirements.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    What technologies do you use? <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>I work with HTML, CSS, JavaScript, Node.js, React, and IoT technologies. I am also learning Java and React Native.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    How long does it take to complete a project? <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>The timeline depends on the project scope and complexity. I provide an estimated timeline during the initial consultation.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Can you help with website hosting? <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, I can assist with website hosting and domain setup.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do you provide maintenance services? <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, I offer ongoing maintenance and support for projects after delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a  href="https://github.com/FlannR" target="_blank" rel="noopener noreferrer">
+                <i class="bx bxl-github"></i>
+            </a>
+
+            <a  href="https://www.linkedin.com/in/mcklin-zirongodza-8b71b21a7" target="_blank" rel="noopener noreferrer" >
+                <i class="bx bxl-linkedin-square"></i>
+            </a>
+
+            <a  href="https://www.instagram.com/mcklin.r?igsh=bWZkNXh0dm54a251 " target="_blank" rel="noopener noreferrer">
+                <i class="bx bxl-instagram-alt"></i>
+            </a>
+
+            <a onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=mcklinrzirongodza@gmail.com&su=Hello&body=I%20would%20like%20to%20connect', '_blank', 'noopener,noreferrer');">
+                <i class="bx bxl-gmail"></i>
+            </a>
+    </div>
+
+        <ul class="list">
+            <li>
+                <a href="#" class="faq-link">FAQ</a>
+            </li>
+
+            <li>
+                <a href="#services">Services</a>
+            </li>
+
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+            <p class="copyright">
+                &copy; 2025 Mcklin.R | All rights reserved.
+            </p>
+
+        </ul>
+    </footer>
+
+    <div id="digit-box-modal" class="modal">
+        <div class="modal-content">
+            <span class="closer" onclick="closeModal()">&times;</span>
+            <h2>Digit Box</h2>
+            <p>
+                Digit Box is an exciting game of strategy and fun! Download the Android APK to start playing now. 
+            </p>
+            <div class="digit-btn" onclick="downloadAPK()">Download</div>
+        </div>
+    </div>
+    
+    <script src="script.js" ></script>
+</body>
+</html>

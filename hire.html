@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            scroll-behavior: smooth;
+            font-family: "Poppins", sans-serif;
+        }    
+
+        :root {
+            --bg-color: #080808;
+            --second-bg-color: #101010;
+            --text-color: white;
+            --main-color: #7700ff;
+        }
+
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+            padding-top: 8rem; /* To avoid header covering content */
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding: 4rem 10%;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 3rem;
+            color: var(--text-color);
+            font-weight: 800;
+            cursor: pointer;
+        }
+
+        .navbar a {
+            font-size: 1.8rem;
+            color: var(--text-color);
+            margin-left: 4rem;
+            font-weight: 500;
+        }
+
+        .hire-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10rem 10%;
+            gap: 5rem;
+        }
+
+        .hire-content {
+            flex: 1;
+            text-align: left;
+        }
+
+        .hire-content h2 {
+            font-size: 5rem;
+            margin-bottom: 2rem;
+        }
+
+        .hire-content p {
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+        }
+
+        .gradient-btn {
+            font-size: 1.8rem;
+            padding: 1rem 2rem;
+            border-radius: 3rem;
+            background: linear-gradient(270deg, rgb(195, 143, 255) 10%, rgb(82, 0, 177) 100%);
+            letter-spacing: 1px;
+            cursor: pointer;
+            color: white;
+            border: none;
+            text-wrap: nowrap;
+            box-shadow: 0 0 25px var(--main-color);
+        }
+
+        .gradient-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+        }
+
+        .hire-image img {
+            width: 32vw;
+            border-radius: 50%;
+            box-shadow: 0 0 25px var(--main-color);
+        }
+
+        .contact-form {
+            background: var(--second-bg-color);
+            padding: 4rem;
+            border-radius: 1.5rem;
+            width: 100%;
+            max-width: 500px;
+            margin: 3rem auto;
+        }
+
+        .contact-form h2 {
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-color);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+            font-size: 1.6rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            font-size: 1.6rem;
+            border-radius: 0.5rem;
+            border: 2px solid var(--main-color);
+            background: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .contact-form button {
+            font-size: 1.8rem;
+            padding: 1rem 2rem;
+            border-radius: 3rem;
+            background: linear-gradient(270deg, rgb(195, 143, 255) 10%, rgb(82, 0, 177) 100%);
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-wrap: nowrap;
+        }
+
+        .contact-form button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+        }
+
+        .back-to-home-btn {
+            font-size: 1.8rem;
+            padding: 1rem 2rem;
+            background: var(--main-color);
+            color: black;
+            border-radius: 3rem;
+            text-align: center;
+            margin-top: 2rem;
+            cursor: pointer;
+        }
+
+        .back-to-home-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+        }
+
+        @media(max-width: 800px) {
+            .hire-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hire-content h2 {
+                font-size: 3rem;
+            }
+            .hire-content p {
+                font-size: 1.4rem;
+            }
+            .hire-image img {
+                width: 50vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Mcklin</div>
+        <nav class="navbar">
+            <a href="index.html" class="back-to-home-btn">Back to Home</a>
+        </nav>
+    </header>
+
+    <section class="hire-section">
+        <div class="hire-content">
+            <h2>Ready to take your project to the next level?</h2>
+            <p>I'm a passionate developer with expertise in web, mobile, IoT, and IT consultancy. Let's create something amazing together!</p>
+        </div>
+        <div class="hire-image">
+            <img src="./images/img1.jpg" alt="Mcklin's Image">
+        </div>
+    </section>
+
+    <div class="contact-form">
+        <h2>Send Me a Message</h2>
+        <form action="mailto:mcklinrzirongodza@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
